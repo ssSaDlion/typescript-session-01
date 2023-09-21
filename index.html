@@ -4,11 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" lang="scss" href="/src/styles.scss">
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <root>
+      <nav class="menu" id="main-menu">
+        <section>
+          <article class="nav-logo">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_1280.png" alt="">
+            </a>
+          </article>
+          <article class="nav-enlaces">
+            <article class="nav-buscador">
+              <input type="search" id="buscador-global">
+
+            </article>
+            <ul>
+              <li><a id="enlace-home" href="http://" target="_blank" rel="noopener noreferrer">Home</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer">Contacto</a></li>
+              <li><a href="http://" target="_blank" rel="noopener noreferrer">Acerca de</a></li>
+            </ul>
+          </article>
+        </section>
+      </nav>
+    </root>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -1,8 +1,83 @@
-html{
-    body{
+$primary: rgb(171, 179, 179);
+
+html {
+    font-size: 10px;
+
+    body {
         padding: 0;
         margin: 0;
 
-        background-color: #caca;
+        background-color: rgb(231, 231, 231);
+    }
+}
+
+#main-menu {
+    font-size: 2rem;
+    background: $primary;
+    padding: 9px 18px;
+    height: 90px;
+    width: 100%;
+    display: block;
+
+    section {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        gap: 20px;
+        max-height: 90px;
+
+        article{
+            max-height: 90px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+
+            a {
+                img {
+                    max-height: 90px;
+                }
+            }
+        }
+
+
+        .nav-enlaces {
+            display: grid;
+            grid-template-rows: 1fr 4fr;
+            gap: 10px;
+
+            ul {
+                display: inline-flex;
+                width: 100%;
+                list-style: none;
+                justify-content: center;
+                padding: 0%;
+                margin: 0%;
+                // margin-top: 36px;
+                align-items: flex-end;
+                li {
+                    margin: 0 15px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: bolder;
+                    }
+                    &:hover{
+                        a{
+                            color: rgb(94, 94, 79);
+                            transition: color 0.2ms ease-in-out;
+                        }
+                    }
+                }
+            }
+            .nav-buscador{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                input[type='search']{
+                    border-radius: 12px;
+                }
+            }
+        }
     }
 }
